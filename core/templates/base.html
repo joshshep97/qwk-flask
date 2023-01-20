@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{title}}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <h1>My Flask App</h1>
+        </section>
+        <nav class="main-nav">
+            <a href="">
+                <li>
+                    nav-item
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    nav-item
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    nav-item
+                </li>
+            </a>
+        </nav>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; <a href="https://github.com/Optimized-Coder" target="_blank">Optimized Coder</a>
+        </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
