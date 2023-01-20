@@ -2,7 +2,7 @@
 A flask quick-start module to get building immediately 
 
 ## File tree
-📦core /n
+📦core 
  ┣ 📂main
  ┃ ┣ 📜routes.py
  ┃ ┗ 📜__init__.py
