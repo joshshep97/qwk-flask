@@ -2,7 +2,7 @@
 A flask quick-start module to get building immediately 
 
 ## File tree
-📦core
+📦core /n
  ┣ 📂main
  ┃ ┣ 📜routes.py
  ┃ ┗ 📜__init__.py
@@ -27,8 +27,8 @@ A flask quick-start module to get building immediately
 ## To do
 - git clone https://github.com/Optimized-Coder/qwk-flask.git
 - add .env file
-    $ git touch .env
-    set my_secret_key to your secret key
+    - $ git touch .env
+    - set my_secret_key to your secret key
 
 Then you're ready to start building your app with more routes and styles! 
 
