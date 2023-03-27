@@ -30,6 +30,60 @@ A flask quick-start module to get building immediately
     - $ git touch .env
     - set my_secret_key to your secret key
 
-Then you're ready to start building your app with more routes and styles! 
+## How To DIY
+
+### Set up your environment
+In the root folder of your application, run:
+```
+root
+$ py -m venv env
+```
+This will create a new virtual environment so you can access environment variables as well as keep order of your depenenies.
+
+Then:
+```
+root
+$ source env/Scripts/activate
+```
+**Note: if your are using Mac or Linux then substitute "Scripts" for "bin"**
+
+
+
+Next, you will need to create a new file called 'app.py'. You can call it what you want but this is conventional
+
+```
+--> app.py
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World'
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5050)
+```
+
+Then, if you return to your git bash terminal, and use the command:
+
+```
+$ python app.py
+```
+
+your application will run at port on your localhost server. Type either:
+- 127.0.0.1:5050
+- localhost:5000
+
+into your browser and, if all is working, you should see your first application.  
+
+For more information visit [the documentation](https://flask.palletsprojects.com/en/2.2.x/)
+
+---
+
+You're ready to start building your app with more routes and styles! 
 
 P.S. app is set to port(5050) as I was already running :5000 on my local server at the time of building
+
+
